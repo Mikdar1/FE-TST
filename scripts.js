@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const username = document.getElementById('login-username').value;
       const password = document.getElementById('login-password').value;
       loginButton.classList.add('btn-login-clicked');
-      const apiUrl = 'https://healthcaretst.livelycliff-504ee3e2.southeastasia.azurecontainerapps.io/token';
+      const apiUrl = 'https://tsthealthcare.livelycliff-504ee3e2.southeastasia.azurecontainerapps.io/token';
       
     
       // Make the API request using Fetch API
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
     
         if (response.ok) {
-            window.location.href = "https://healthcaretst.livelycliff-504ee3e2.southeastasia.azurecontainerapps.io/docs";
+            window.location.href = "https://tsthealthcare.livelycliff-504ee3e2.southeastasia.azurecontainerapps.io/docs";
         } else {
             try {
                 const errorData = await response.json();
